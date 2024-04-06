@@ -12,7 +12,8 @@ class ProfileController extends Controller
     public function __invoke(Request $request)
     {
         $pageTitle = 'Profile';
-        
-        return view('profile', ['pageTitle' => $pageTitle]);
+        $icon = 'bi bi-person-circle';
+
+        return view('profile', ['pageTitle' => $pageTitle, 'icon' => $icon]);
     }
 }

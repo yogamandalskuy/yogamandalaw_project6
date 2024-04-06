@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class HomeController extends Controller
 {
-    function index()
+    public function index()
     {
         $pageTitle = 'Home';
+        $icon = 'bi bi-house-fill';
 
-        return view('home', ['pageTitle' => $pageTitle]);
+        return view('home', ['pageTitle' => $pageTitle, 'icon' => $icon]);
     }
 }
